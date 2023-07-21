@@ -16,7 +16,7 @@ export const FlexBox = styled.div<{ $isColumn?: boolean; }>`
     flex-flow: ${props => props.$isColumn ? "column" : "row"};;
     text-align: center;
     justify-content: space-between;
-    @media (max-width: ${breakpoints.sm}) {
+    @media (max-width: ${breakpoints.xl}) {
         flex-flow: column;
     }
 `;
@@ -48,6 +48,7 @@ export const Icon = styled.span`
     padding: 10px;
     margin: 5px;
     a {
-        color: var(--aliceBlue);  
+        color: var(--aliceBlue);
+        width: inherit;
     }
 `;

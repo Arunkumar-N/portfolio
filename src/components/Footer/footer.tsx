@@ -10,6 +10,6 @@ const FooterBlock = styled.div`
 
 export default function Footer(): ReactElement {
     return (
-        <FooterBlock> © 2023. All rights reserved by Arunkumar Ningamurthy</FooterBlock>
+        <FooterBlock> © {new Date().getFullYear()}. All rights reserved by Arunkumar Ningamurthy</FooterBlock>
     )
 };
