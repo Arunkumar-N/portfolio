@@ -2,14 +2,13 @@ import React, { ReactElement } from 'react';
 import styled from 'styled-components';
 
 const FooterBlock = styled.div`
-    width: calc(100% - 20px);
-    margin: 0 10px;
+    width: 100%;
     padding: 10px 0px;
-    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -3px 3px 0 var(--shadowColor);
 `;
 
 export default function Footer(): ReactElement {
     return (
-        <FooterBlock> © {new Date().getFullYear()}. All rights reserved by Arunkumar Ningamurthy</FooterBlock>
+        <FooterBlock> © {new Date().getFullYear()} All rights reserved by Arunkumar Ningamurthy</FooterBlock>
     )
 };

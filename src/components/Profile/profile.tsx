@@ -1,23 +1,21 @@
 import React, { ReactElement } from "react";
-import { FlexBox, GreySpan, Icon, OrangeRedSpan } from "../../theme/styles";
+import { FlexBox, GreySpan, Icon, IconImage, OrangeRedSpan } from "../../theme/styles";
 import styled from "styled-components";
 import { breakpoints } from "../../theme/breakpoints";
 import { spacing } from "../../theme/spacing";
+import { ASSETS_PATH, CONTACTS, SKILLS } from "../../helpers/constants";
 
 const Image = styled.img`
   border-radius: 10px;
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px 2px var(--shadowColor);
   border: 3px solid var(--lightgrey);
   height: 300px;
   @media (max-width: ${breakpoints.xl}) {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     margin: auto;
     border-radius: 50%;
   }
-`;
-const IconImage = styled.img`
-  width: inherit;
 `;
 
 const ProfileContent = styled.div`
@@ -55,16 +53,6 @@ const H1 = styled.h1`
     text-align: center;
   }
 `;
-const SKILLS = [
-  { src: "assets/html.png", alt: "HTML" },
-  { src: "assets/js.png", alt: "JS" },
-  { src: "assets/css.png", alt: "CSS" },
-  { src: "assets/angularjs.svg", alt: "Angular" },
-  { src: "assets/react.svg", alt: "React" },
-  { src: "assets/java.svg", alt: "Java" },
-  { src: "assets/git.png", alt: "Git" },
-  { src: "assets/jenkins.png", alt: "Jenkins" },
-];
 
 export default function Profile(): ReactElement {
   var startDate = new Date("08-08-2016");
@@ -75,7 +63,7 @@ export default function Profile(): ReactElement {
   var intervalMonth = (endMonth - startMonth) % 12;
   return (
     <FlexBox>
-      <Image src={"assets/profile-2.png"} alt="logo" />
+      <Image src={"assets/Profile.jpg"} alt="logo" />
       <ProfileContent>
         <H1>
           Hi, I'm <OrangeRedSpan>Arunkumar N</OrangeRedSpan>
@@ -100,21 +88,13 @@ export default function Profile(): ReactElement {
               <GreySpan>Find me in</GreySpan>
             </IconSummary>
             <LeftALignDiv>
-              <Icon>
-                <a href="mailto:arunkumar.frnd.n@gmail.com">
-                  <IconImage src={"assets/email.png"} alt="html" />
+              {CONTACTS.map((contact, index) => (
+                <Icon key={index}>
+                <a href={contact.href}>
+                  <IconImage src={ASSETS_PATH + contact.src} alt={contact.alt} />
                 </a>
               </Icon>
-              <Icon>
-                <a href="tel:0434154070">
-                  <IconImage src={"assets/phone.png"} alt="html" />
-                </a>
-              </Icon>
-              <Icon>
-                <a href="https://www.linkedin.com/in/arunkumar-n-348194107">
-                  <IconImage src={"assets/linked-in.png"} alt="html" />
-                </a>
-              </Icon>
+              ))}
             </LeftALignDiv>
           </FlexBox>
           <FlexBox $isColumn>
@@ -122,9 +102,9 @@ export default function Profile(): ReactElement {
               <GreySpan>Skills</GreySpan>
             </IconSummary>
             <LeftALignDiv>
-              {SKILLS.map((skill) => (
-                <Icon>
-                  <IconImage src={skill.src} alt={skill.alt} />
+              {SKILLS.map((skill, index) => (
+                <Icon key={index}>
+                  <IconImage src={ASSETS_PATH + skill.src} alt={skill.alt} />
                 </Icon>
               ))}
             </LeftALignDiv>

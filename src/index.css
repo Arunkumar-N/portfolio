@@ -6,4 +6,5 @@
 body {
   background-color: var(--aliceBlue);
   font-family: 'system-ui';
+  margin: 0;
 }

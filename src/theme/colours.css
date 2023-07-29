@@ -1,53 +1,11 @@
 :root {
-    --aliceBlue: #e9f5f1;
+    --aliceBlue: #F0F0F0;
     --cyan: #61dafb;
-    --grey: #808080;
+    --grey: #4F4F4F;
+    --grey2: #a5a4a4;
+    --grey3: #F0EFEF;
     --lightgrey: #dedcdc;
-    --orangeRed: #FF5349;
-}
-::backdrop {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(59,130,246,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia: ;
+    --orangeRed: #B30900;
+    --shadowColor:rgba(5,5,5,0.1);
+    --shadowColor2: #b3b2b2
 }
