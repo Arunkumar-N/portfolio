@@ -9,7 +9,6 @@ import {
 export default function Education(): ReactElement {
   return (
     <>
-      {/* <OrangeRedTitle>Education</OrangeRedTitle> */}
       <FlexBox>
         <CardContainer>
           <TitleBlock>Bachelor of Engineering</TitleBlock>

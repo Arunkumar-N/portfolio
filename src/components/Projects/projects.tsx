@@ -21,7 +21,7 @@ const ProjectContainer = styled(CardContainer)`
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   &:hover, :focus {
-    max-height: 100vh;
+    max-height: 500vh;
     border: 1px solid var(--orangeRed);
     background: linear-gradient(to right, var(--lightgrey), var(--grey2))
   }

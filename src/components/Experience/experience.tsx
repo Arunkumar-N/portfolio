@@ -61,7 +61,6 @@ const ExpCardContainer = styled(CardContainer)`
 export default function Experience(): ReactElement {
   return (
     <>
-      {/* <OrangeRedTitle>Experience</OrangeRedTitle> */}
       <FlexBox $isColumn>
         {EXPERIENCES.map((exp, index) => (
           <ExpCardContainer key={"Exp-" + index}>

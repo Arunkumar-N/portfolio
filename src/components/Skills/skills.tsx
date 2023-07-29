@@ -69,7 +69,7 @@ export default function Skills(): ReactElement {
             </Icon>
             <ProgressBar>
               <ProgressBarDiv width={skill.rate * 10}>
-                <span>{skill.alt}</span>
+                <span style={{ lineHeight: '12px'}}>{skill.alt}</span>
               </ProgressBarDiv>
               <ProgressBarTooltip left={skill.rate * 10}>
                 {skill.rate} / 10
